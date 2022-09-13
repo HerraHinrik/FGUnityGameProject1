@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class TriggerArea : MonoBehaviour
 {
@@ -10,9 +11,11 @@ public class TriggerArea : MonoBehaviour
     GameObject otherObject = other.gameObject;
     otherObject.GetComponent<MeshRenderer>().material.color = GetRandomColor();
   }
+  
   private Color GetRandomColor()
   {
-    Color color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
+    Color color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), 1f);
     return color;
   }
 }
+

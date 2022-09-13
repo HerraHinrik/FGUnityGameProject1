@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  characterBody: {fileID: 0}
+  characterBody: {fileID: 1483581008}
 --- !u!54 &1483581008
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -534,7 +534,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483581002}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
